@@ -5,20 +5,20 @@
 class Wtm < Formula
   desc "Worktree Manager — orchestrate git worktrees, AI agents, and team workflows"
   homepage "https://github.com/LucasPcq/worktree-manager-cli"
-  version "0.6.1"
+  version "0.6.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.1/worktree-manager-cli_0.6.1_darwin_amd64.tar.gz"
-      sha256 "4ccadb4fc34d7eb09b8856f140489e0cad33b7d8e2233ec4d58f3eab85b829e6"
+      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.2/worktree-manager-cli_0.6.2_darwin_amd64.tar.gz"
+      sha256 "ec2c47c3f145e3f634cd060f8fb665610d2a0d87b1817767ef7f09269f298f09"
 
       define_method(:install) do
         bin.install "wtm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.1/worktree-manager-cli_0.6.1_darwin_arm64.tar.gz"
-      sha256 "695f2e2af6d9da8f9e024f1b2b74e9dc7101e2673274c2a1ae24077da95dd7cd"
+      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.2/worktree-manager-cli_0.6.2_darwin_arm64.tar.gz"
+      sha256 "b5d2011ea74128b646c458e366642036f40e65eb1b9f181478815f61ecea5054"
 
       define_method(:install) do
         bin.install "wtm"
@@ -28,15 +28,15 @@ class Wtm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.1/worktree-manager-cli_0.6.1_linux_amd64.tar.gz"
-      sha256 "6d96f4100b250e5a1b360a4aa26621b6a53a74639abd8b7126dbe924771cfa6a"
+      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.2/worktree-manager-cli_0.6.2_linux_amd64.tar.gz"
+      sha256 "88186322675071d202f2b953b5dfa01ef7c51084c54520905dd1b590348969b5"
       define_method(:install) do
         bin.install "wtm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.1/worktree-manager-cli_0.6.1_linux_arm64.tar.gz"
-      sha256 "a183b331c635139f3fc353fc34cd5453e82ea4a1acac4d72fe4f71a896a2efe3"
+      url "https://github.com/LucasPcq/worktree-manager-cli/releases/download/v0.6.2/worktree-manager-cli_0.6.2_linux_arm64.tar.gz"
+      sha256 "e72bb56e487671033ea068610b82e74e5b58ab4e75a452f5c3c7efd292fba212"
       define_method(:install) do
         bin.install "wtm"
       end
