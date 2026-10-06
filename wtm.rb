@@ -5,21 +5,21 @@
 class Wtm < Formula
   desc "Worktree Manager — orchestrate git worktrees, AI agents, and team workflows"
   homepage "https://github.com/LucasPcq/wtm"
-  version "0.29.0"
+  version "0.29.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.0/wtm_0.29.0_darwin_amd64.tar.gz"
-      sha256 "6887160d293f95e412d3f2fe5c5b89f9ac13b90ff528384ff97fd88f6ef21a53"
+      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.1/wtm_0.29.1_darwin_amd64.tar.gz"
+      sha256 "5266888a272785684abdc92a6ebbcf9f116a187163547ad94d303e621aec49c6"
 
       define_method(:install) do
         bin.install "wtm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.0/wtm_0.29.0_darwin_arm64.tar.gz"
-      sha256 "1e4cb8f96bd372d8c89a910a9e43f37331eb0c847fe853c9a5cc79b8ae90b3bc"
+      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.1/wtm_0.29.1_darwin_arm64.tar.gz"
+      sha256 "0d93dd72d40f7fbca7a993e0b74edc2c0482f761e40ecf8b64502660b813c5f3"
 
       define_method(:install) do
         bin.install "wtm"
@@ -29,15 +29,15 @@ class Wtm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.0/wtm_0.29.0_linux_amd64.tar.gz"
-      sha256 "0a95b6a2c5fd9c8a11c29a2da97992869f79b4975d73700d5ce7da685789ced6"
+      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.1/wtm_0.29.1_linux_amd64.tar.gz"
+      sha256 "662ca9f275639e60bc85d2c588e3bcbca8e069198236935ee4432ea4535e23b2"
       define_method(:install) do
         bin.install "wtm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.0/wtm_0.29.0_linux_arm64.tar.gz"
-      sha256 "39a44c4b8a74d5d233868d4cafb9ec28c0c833ae5851f47edda66ad5bce96e1a"
+      url "https://github.com/LucasPcq/wtm/releases/download/v0.29.1/wtm_0.29.1_linux_arm64.tar.gz"
+      sha256 "d4b41930a346ebcbda693d812840042f36d83021d954f2afbbcb725c16141dc3"
       define_method(:install) do
         bin.install "wtm"
       end
